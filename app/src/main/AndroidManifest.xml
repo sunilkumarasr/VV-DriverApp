@@ -33,43 +33,7 @@
             android:name=".Activitys.OrderDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".Activitys.TermsAndConditionsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Activitys.PrivacyPolicyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Activitys.KYCDetailsActivity"
-            android:exported="false" />
-        <activity
             android:name=".Activitys.MyAccountActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Activitys.AboutUsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Logins.VehicleSelectionActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Logins.UploadDocActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Logins.DocsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Logins.AddYourProfilePicActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Logins.AddYourAddressActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Logins.PersonalInformationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Logins.OTPActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Logins.RegisterActivity"
             android:exported="false" />
         <activity
             android:name=".Logins.LoginActivity"

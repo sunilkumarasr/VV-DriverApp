@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.royalit.driverapp.Activitys.DashBoardActivity
 import com.royalit.driverapp.Config.ViewController
 import com.royalit.driverapp.R
 import com.royalit.driverapp.databinding.ActivityLoginBinding
@@ -28,14 +29,10 @@ class LoginActivity : AppCompatActivity() {
 
     private fun inits() {
         binding.linearLogin.setOnClickListener {
-            val intent = Intent(this@LoginActivity, OTPActivity::class.java)
-            intent.putExtra("type", "Login")
+            val intent = Intent(this@LoginActivity, DashBoardActivity::class.java)
             startActivity(intent)
         }
 
-        binding.linearRegister.setOnClickListener {
-            startActivity(Intent(this@LoginActivity, RegisterActivity::class.java))
-        }
     }
 
 }

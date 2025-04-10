@@ -8,20 +8,16 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.util.Log
-import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.messaging.FirebaseMessaging
 import com.royalit.driverapp.Config.Preferences
 import com.royalit.driverapp.Config.ViewController
 import com.royalit.driverapp.Logins.LoginActivity
 import com.royalit.driverapp.R
-import com.royalit.driverapp.databinding.ActivityDashBoardBinding
 import com.royalit.driverapp.databinding.ActivitySplashBinding
 
 class SplashActivity : AppCompatActivity() {
@@ -37,8 +33,7 @@ class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        ViewController.changeStatusBarColor(this, ContextCompat.getColor(this, R.color.white), false)
-
+        ViewController.changeStatusBarColor(this, ContextCompat.getColor(this, R.color.splashW), false)
 
         FirebaseMessaging.getInstance().token.addOnCompleteListener(OnCompleteListener { task ->
             if (!task.isSuccessful) {
@@ -49,7 +44,7 @@ class SplashActivity : AppCompatActivity() {
             Log.e("FCM_TOKEN", "FCM Token: ${task.result}")
         })
         val title= intent.getStringExtra("title")
-        val    notificationMessage= intent.getStringExtra("isNotification").toString()
+        val notificationMessage= intent.getStringExtra("isNotification").toString()
 
         Log.e("notificationMessage","notificationMessage "+notificationMessage+ "title "+title)
         askNotificationPermission()
@@ -70,7 +65,6 @@ class SplashActivity : AppCompatActivity() {
                 )
             )
         }
-
 
         methodRun()
 

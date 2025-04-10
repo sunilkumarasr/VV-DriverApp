@@ -21,5 +21,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Driver App"
+rootProject.name = "VV Driver App"
 include(":app")

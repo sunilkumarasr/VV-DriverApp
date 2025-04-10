@@ -8,12 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import com.google.android.material.bottomsheet.BottomSheetDialog
-import com.royalit.driverapp.Activitys.AboutUsActivity
-import com.royalit.driverapp.Activitys.KYCDetailsActivity
 import com.royalit.driverapp.Activitys.MyAccountActivity
-import com.royalit.driverapp.Activitys.PrivacyPolicyActivity
-import com.royalit.driverapp.Activitys.TermsAndConditionsActivity
-import com.royalit.driverapp.Logins.UploadDocActivity
 import com.royalit.driverapp.R
 import com.royalit.driverapp.databinding.FragmentProfileBinding
 
@@ -42,12 +37,7 @@ class ProfileFragment : Fragment(),View.OnClickListener {
 
     private fun init() {
 
-
         binding.relativeMyAccount.setOnClickListener(this)
-        binding.relativeKYCDetails.setOnClickListener(this)
-        binding.relativeAboutUS.setOnClickListener(this)
-        binding.relativePrivacyPolicy.setOnClickListener(this)
-        binding.relativeTermsAndConditions.setOnClickListener(this)
         binding.relativeLogout.setOnClickListener(this)
 
     }
@@ -57,18 +47,7 @@ class ProfileFragment : Fragment(),View.OnClickListener {
             R.id.relativeMyAccount -> {
                 startActivity(Intent(requireActivity(), MyAccountActivity::class.java))
             }
-            R.id.relativeKYCDetails -> {
-                startActivity(Intent(requireActivity(), KYCDetailsActivity::class.java))
-            }
-            R.id.relativeAboutUS -> {
-                startActivity(Intent(requireActivity(), AboutUsActivity::class.java))
-            }
-            R.id.relativePrivacyPolicy -> {
-                startActivity(Intent(requireActivity(), PrivacyPolicyActivity::class.java))
-            }
-            R.id.relativeTermsAndConditions -> {
-                startActivity(Intent(requireActivity(), TermsAndConditionsActivity::class.java))
-            }
+
             R.id.relativeLogout -> {
                 LogoutDialog()
             }
