@@ -99,7 +99,6 @@
                     android:hint="Enter your Id"
                     android:textSize="15sp"
                     android:singleLine="true"
-                    android:inputType="phone"
                     android:textColorHint="@color/hintcolor"/>
             </LinearLayout>
 
