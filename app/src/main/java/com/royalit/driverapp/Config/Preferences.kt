@@ -11,6 +11,8 @@ object Preferences {
     const val LOGINCHECK = "LOGINCHECK"
     const val userId = "userId"
     const val name = "name"
+    const val stateDate = "stateDate"
+    const val endDate = "endDate"
 
     private fun getSharedPreferences(context: Context): SharedPreferences {
         return context.getSharedPreferences(PREFERENCE_NAME, Context.MODE_PRIVATE)

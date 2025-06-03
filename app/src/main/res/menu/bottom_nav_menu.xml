@@ -10,10 +10,6 @@
         android:title="Deliveries"
         />
     <item
-        android:id="@+id/navigationSupport"
-        android:icon="@drawable/support_ic"
-        android:title="Support"/>
-    <item
         android:id="@+id/navigationProfile"
         android:icon="@drawable/profile_ic"
         android:title="Profile"/>

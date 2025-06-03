@@ -22,10 +22,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-                <de.hdodenhof.circleimageview.CircleImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/user_ic"
+                    android:src="@drawable/scooter_color_ic"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"/>
@@ -65,7 +65,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Sunil"
+                            android:text="Delivery Partner"
                             android:singleLine="true"
                             android:fontFamily="@font/teachers_regular"
                             android:textColor="@color/black"
@@ -88,7 +88,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Sunil@gmail.com"
+                            android:text="VillageVegetables2025"
                             android:singleLine="true"
                             android:fontFamily="@font/teachers_regular"
                             android:textColor="@color/black"
@@ -111,7 +111,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="+919441085061"
+                            android:text="9441085061"
                             android:singleLine="true"
                             android:fontFamily="@font/teachers_regular"
                             android:textColor="@color/black"

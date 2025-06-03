@@ -27,10 +27,19 @@ class LoginActivity : AppCompatActivity() {
         inits()
     }
 
+
     private fun inits() {
         binding.linearLogin.setOnClickListener {
-            val intent = Intent(this@LoginActivity, DashBoardActivity::class.java)
-            startActivity(intent)
+            if (binding.editId.text.toString() == "") {
+                ViewController.showToast(this@LoginActivity,"Enter your Id")
+            }else{
+                if (binding.editId.text.toString() == "VillageVegetables2025") {
+                    val intent = Intent(this@LoginActivity, DashBoardActivity::class.java)
+                    startActivity(intent)
+                }else{
+                    ViewController.showToast(this@LoginActivity,"wrong ID")
+                }
+            }
         }
 
     }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3b6c64</color>
-    <color name="darkcolorPrimary">#3b6c64</color>
+    <color name="colorPrimary">#02923b</color>
+    <color name="darkcolorPrimary">#02923b</color>
     <color name="black">#000000</color>
     <color name="txtHeader">#707070</color>
     <color name="text">#333333</color>
@@ -28,4 +28,5 @@
     <color name="loginBg">#1d272f</color>
     <color name="buttonBg">#d89f5d</color>
     <color name="whitebg">#fefefe</color>
+    <color name="txtH">#979797</color>
 </resources>

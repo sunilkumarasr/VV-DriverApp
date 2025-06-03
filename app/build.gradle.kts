@@ -69,4 +69,7 @@ dependencies {
     implementation("com.google.firebase:firebase-messaging")
     implementation("com.google.firebase:firebase-analytics")
 
+    //lottie
+    implementation ("com.airbnb.android:lottie:6.0.0")
+
 }
